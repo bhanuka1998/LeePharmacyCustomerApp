@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+<ImageView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/build"
+    android:src="@drawable/buld"
+    />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_below="@+id/build"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:text="Full service pharmacy with sterile and non-sterile compounding.
+Durable Medical Equipment and Medical Supplies"
+        android:layout_marginTop="560dp"
+        />
+
+</FrameLayout>

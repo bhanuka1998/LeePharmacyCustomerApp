@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegiserActivity"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Customer Register"
+        android:textSize="40dp"
+        android:id="@+id/tvCustomerLink"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/tvCustomerLink"
+        android:id="@+id/txtCustomerName"
+        android:hint="Customer Name"
+        android:textSize="25dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/txtCustomerName"
+        android:id="@+id/txtCustomerEmail"
+        android:hint="Email"
+        android:textSize="25dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/txtCustomerEmail"
+        android:id="@+id/txtCustomerPhone"
+        android:hint="Phone number"
+        android:textSize="25dp"/>
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/txtCustomerPhone"
+        android:id="@+id/txtCustomerPassword"
+        android:hint="password"
+        android:inputType="textPassword"
+        android:textSize="25dp"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnCustomerRegister"
+        android:layout_marginTop="15dp"
+        android:text="Register"
+        android:layout_below="@+id/txtCustomerPassword"
+        android:backgroundTint="@color/black"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Customer? Login"
+        android:layout_marginTop="15dp"
+        android:id="@+id/tvCustomerRegister"
+        android:layout_below="@+id/btnCustomerRegister"
+        android:gravity="center"/>
+
+
+</LinearLayout>
