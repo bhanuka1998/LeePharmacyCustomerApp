@@ -7,6 +7,7 @@ import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 
@@ -17,11 +18,15 @@ public class MainActivity extends AppCompatActivity {
     private BottomNavigationView bottomNavigationView;
     private FragmentManager frag_man;
     private FragmentTransaction frag_trans;
+    private String email;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        Intent intent = getIntent();
+        email = intent.getStringExtra("email");
+        System.out.println(email);
 
         bottomNavigationView = findViewById(R.id.navigation);
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
@@ -33,17 +38,15 @@ public class MainActivity extends AppCompatActivity {
                     case R.id.nav_home:
                         loadFragment(new HomeFragment());
                         break;
-                   case R.id.nav_search:
-                     loadFragment(new ViewDrugs());
-                    break;
-//                    case R.id.nav_cart:
-//                        loadFragment(new PrescriptionsFragment(str));
-//                        break;
-//                    case R.id.nav_user:
-//
-//
-//                        loadFragment(new ProfileFragment(str));
-//                        break;
+                    case R.id.nav_search:
+                         loadFragment(new ViewDrugs());
+                         break;
+                    case R.id.nav_cart:
+                        loadFragment(new PrescriptionFragment());
+                        break;
+                    case R.id.nav_user:
+                        loadFragment(new ProfileFragment(email));
+                        break;
                 }
                 return true;
             }

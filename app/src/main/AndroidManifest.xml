@@ -13,9 +13,9 @@
         android:theme="@style/Theme.LeePharmacyCustomerApp"
         android:usesCleartextTraffic="true">
         <activity android:name=".RegiserActivity"></activity>
-        <activity android:name=".LoginActivity" />
+        <activity android:name=".MainActivity" />
         <activity android:name=".SearchActivity" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

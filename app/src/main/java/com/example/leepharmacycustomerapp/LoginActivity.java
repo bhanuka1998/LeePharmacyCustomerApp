@@ -24,7 +24,7 @@ public class LoginActivity extends AppCompatActivity {
     private Button btnLogin;
     private TextView tvRegister;
     private final String TAG = "LoginActivity";
-    private final String BaseURL = "http://192.168.1.5:8080";
+    private final String BaseURL = "http://192.168.1.4:8080";
 
 
     @Override
@@ -73,7 +73,10 @@ public class LoginActivity extends AppCompatActivity {
                         }
                         else{
                             Toast.makeText(LoginActivity.this, "Welcome back", Toast.LENGTH_SHORT).show();
-                            startActivity(new Intent(LoginActivity.this, MainActivity.class));
+                            Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+                            intent.putExtra("email",cusEmail);
+                            Toast.makeText(LoginActivity.this, cusEmail, Toast.LENGTH_SHORT).show();
+                            startActivity(intent);
                         }
                     }
 

@@ -3,14 +3,15 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    >
 
     <ImageView
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:layout_gravity="center"
         android:id="@+id/drug_details_imageView"
-        android:src="@drawable/ic_launcher_background"/>
+        android:src="@drawable/pills"/>
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -25,15 +26,6 @@
         android:layout_height="wrap_content"
         android:id="@+id/drug_details_drugBrand"
         android:text="Brand"
-        android:layout_gravity="center"
-        android:textSize="18sp"
-        android:textStyle="bold"/>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/drug_details_drugQty"
-        android:text="Quantity"
         android:layout_gravity="center"
         android:textSize="18sp"
         android:textStyle="bold"/>

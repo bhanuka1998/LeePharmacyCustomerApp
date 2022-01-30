@@ -23,7 +23,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 public class ViewDrugs extends Fragment {
     private static final String TAG = "ViewDrugs";
-    private static final String BaseURL = "http://192.168.1.5:8080";
+    private static final String BaseURL = "http://192.168.1.4:8080";
 
     private DrugDetailsAdapter drugDetailsAdapter;
     private ArrayList<DrugInfo> drugsArrayList = new ArrayList<>();

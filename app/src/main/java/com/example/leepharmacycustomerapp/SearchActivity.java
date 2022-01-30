@@ -20,7 +20,7 @@ public class SearchActivity extends AppCompatActivity {
     private Button btnSearch;
     private int drugID;
     private final String TAG = "RegisterActivity";
-    private final String BaseURL = "http://192.168.1.5:8080";
+    private final String BaseURL = "http://192.168.1.4:8080";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

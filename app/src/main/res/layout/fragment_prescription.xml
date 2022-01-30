@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".PrescriptionFragment"
+    android:paddingTop="175dp">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Prescription"
+        android:textSize="40dp"
+        android:id="@+id/tvPresLink"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/tvPresLink"
+        android:id="@+id/txtCusName"
+        android:hint="Customer Name"
+        android:textSize="25dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/txtCusName"
+        android:id="@+id/txtDocName"
+        android:hint="Doctor Name"
+        android:textSize="25dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/txtDocName"
+        android:id="@+id/txtPresContent"
+        android:hint="Prescription Content"
+        android:maxLines="10"
+        android:textSize="25dp"/>
+
+    <Button
+        android:id="@+id/btnPresAdd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtDocName"
+        android:layout_marginTop="15dp"
+        android:backgroundTint="@color/teal_700"
+        android:text="Add Prescription" />
+
+
+</LinearLayout>

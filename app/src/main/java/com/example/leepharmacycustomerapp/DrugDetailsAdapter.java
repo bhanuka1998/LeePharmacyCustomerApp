@@ -32,7 +32,7 @@ public class DrugDetailsAdapter extends RecyclerView.Adapter<DrugDetailsAdapter.
         DrugInfo drugInfo = drugInfoList.get(position);
         holder.drugName.setText(drugInfo.getDrugName());
         holder.brand.setText(drugInfo.getBrandName());
-        holder.drugQty.setText((drugInfo.getFullQty().toString()));
+//        holder.drugQty.setText((drugInfo.getFullQty().toString()));
     }
 
     @Override
@@ -49,7 +49,6 @@ public class DrugDetailsAdapter extends RecyclerView.Adapter<DrugDetailsAdapter.
 
             drugName = itemView.findViewById(R.id.drug_details_drugName);
             brand = itemView.findViewById(R.id.drug_details_drugBrand);
-            //drugQty = itemView.findViewById(R.id.drug_details_drugQty);
 
         }
     }

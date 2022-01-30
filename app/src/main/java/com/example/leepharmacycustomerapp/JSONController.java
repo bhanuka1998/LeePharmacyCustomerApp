@@ -1,5 +1,7 @@
 package com.example.leepharmacycustomerapp;
 
+import android.app.Presentation;
+
 import java.util.List;
 
 import okhttp3.ResponseBody;
@@ -22,5 +24,11 @@ public interface JSONController {
 
     @GET("/getAllDrugsByNames")
     Call<List<DrugInfo>> getDrugDetails();
+
+    @GET("/getCustomerByEmail/{email}")
+    Call<Customer> getCustomerByEmail(@Path("email") String email);
+
+    @POST("/addPrescription")
+    Call<ResponseBody> addPrescription(@Body Prescription prescription);
 
 }
